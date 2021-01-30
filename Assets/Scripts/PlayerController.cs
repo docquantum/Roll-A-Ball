@@ -14,8 +14,7 @@ public class PlayerController : MonoBehaviour
     public TextMeshProUGUI countText;
     public TextMeshProUGUI winTextObject; 
     private int count = 0;
-    [SerializeField]
-    private int numOfPickups = 12;
+    private int numOfPickups = 0;
     void OnMove(InputValue movementValue)
     {
         var movementVector = movementValue.Get<Vector2>();
@@ -27,6 +26,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        numOfPickups = GameObject.FindGameObjectsWithTag("PickUp").Length;
         SetCountText();
     }
 
