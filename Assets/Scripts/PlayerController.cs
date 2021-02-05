@@ -1,26 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
 
     private Rigidbody rb;
-    private float movementX;
-    private float movementY;
+    private float movementX = 0f;
+    private float movementY = 0f;
     public float speed = 0f;
     public TextMeshProUGUI countText;
     public TextMeshProUGUI winTextObject; 
     private int count = 0;
     private int numOfPickups = 0;
-    void OnMove(InputValue movementValue)
-    {
-        var movementVector = movementValue.Get<Vector2>();
-        movementX = movementVector.x;
-        movementY = movementVector.y;
-    }
+    // void OnMove(InputValue movementValue)
+    // {
+    //     var movementVector = movementValue.Get<Vector2>();
+    //     movementX = movementVector.x;
+    //     movementY = movementVector.y;
+    // }
 
 
     void Start()

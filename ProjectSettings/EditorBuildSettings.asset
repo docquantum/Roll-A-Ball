@@ -6,9 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Template/Scenes/SampleScene.unity
+    path: Assets/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
   - enabled: 1
     path: Assets/Scenes/MiniGame.unity
     guid: bdd003563ef3507e98cb45f96d0832c9
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: b34f9da6b5509b54bb028307bda31b80, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 392d4967ed4928796a7eb4d4dd10daa2, type: 2}
